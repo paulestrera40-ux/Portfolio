@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth text-slate-100">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#020100" />
     <title>John Paul Cornelio | Operations & Admin Portfolio</title>
     <meta name="description" content="John Paul Cornelio: Your remote-ready all-in-one Operations & Admin partner." />
@@ -10,387 +10,229 @@
     <script src="https://kit.fontawesome.com/90d10ee825.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      body, html {
-        background-color: #030201 !important;
-        color: #f8fafc !important;
-        font-family: 'Inter', system-ui, sans-serif;
-        overflow-x: hidden;
-      }
-      
-      /* LIVE ANIMATED CYBER GRID BACKGROUND */
-      .cyber-bg {
-        position: fixed;
-        top: 0; left: 0; width: 100vw; height: 100vh;
-        z-index: -1;
-        background-image: 
-          linear-gradient(rgba(245, 158, 11, 0.02) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(245, 158, 11, 0.02) 1px, transparent 1px);
-        background-size: 50px 50px;
-        animation: gridScroll 25s linear infinite;
-      }
-      @keyframes gridScroll {
-        from { background-position: 0 0; }
-        to { background-position: 0 50px; }
-      }
-      
-      .tech-title { font-family: 'Courier New', Courier, monospace; letter-spacing: -0.03em; }
-      
-      /* PREMIUM METALLIC GLASS CARD WITH 3D POP */
-      .glass-card {
-        background: linear-gradient(135deg, rgba(20, 15, 10, 0.85) 0%, rgba(10, 7, 5, 0.95) 100%) !important;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(217, 119, 6, 0.18);
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.95);
-        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        perspective: 1000px;
-      }
-      .glass-card:hover {
-        transform: translateY(-5px) scale(1.01);
-        border-color: rgba(251, 191, 36, 0.6);
-        box-shadow: 0 25px 50px -12px rgba(245, 158, 11, 0.2), inset 0 0 20px rgba(245, 158, 11, 0.05);
-      }
-      
-      /* GOWING BADGES WITH PACKET FLOOD ANIMATION */
-      .interactive-badge {
-        background: rgba(24, 20, 15, 0.8) !important;
-        border: 1px solid rgba(168, 85, 24, 0.4);
-        color: #e2e8f0;
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        position: relative;
-        overflow: hidden;
-      }
-      .interactive-badge::before {
-        content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.15), transparent);
-        transition: 0.5s;
-      }
-      .interactive-badge:hover::before { left: 100%; }
-      .interactive-badge:hover {
-        transform: translateY(-2px);
-        background: rgba(245, 158, 11, 0.15) !important;
-        border-color: #fbbf24 !important;
-        color: #fbbf24 !important;
-        text-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
-        box-shadow: 0 0 15px rgba(245, 158, 11, 0.2);
-      }
-      
-      /* GOLD TERMINAL ACTIVE TAB GLOW */
-      .active-tab {
-        background: rgba(245, 158, 11, 0.15) !important;
-        color: #fbbf24 !important;
-        border-color: #f59e11 !important;
-        box-shadow: 0 0 25px rgba(245, 158, 11, 0.25), inset 0 0 10px rgba(245, 158, 11, 0.15) !important;
-        text-shadow: 0 0 6px rgba(251, 191, 36, 0.4);
-        animation: tabPulse 2s infinite ease-in-out;
-      }
-      @keyframes tabPulse {
-        0%, 100% { border-color: rgba(245, 158, 11, 1); }
-        50% { border-color: rgba(245, 158, 11, 0.4); }
-      }
-      
-      /* FIXED RADAR TIMELINE DOT ANIMATION */
-      .timeline-dot {
-        background: #fbbf24 !important;
-        animation: radarPulse 2.5s infinite ease-in-out;
-      }
-      @keyframes radarPulse {
-        0% { box-shadow: 0 0 0 0px rgba(245, 158, 11, 0.8), 0 0 10px #f59e11; }
-        70% { box-shadow: 0 0 0 12px rgba(245, 158, 11, 0), 0 0 20px rgba(245, 158, 11, 0.2); }
-        100% { box-shadow: 0 0 0 0px rgba(245, 158, 11, 0), 0 0 10px #f59e11; }
-      }
+        body, html {
+            background-color: #020100 !important;
+            color: #f8fafc !important;
+            font-family: 'Inter', system-ui, sans-serif;
+            overflow-x: hidden;
+        }
 
-      /* RADAR SCANNER SWEEP ANIMATION */
-      .radar-sweep {
-        position: absolute; width: 100%; height: 100%; top: 0; left: 0;
-        background: conic-gradient(from 0deg, rgba(245, 158, 11, 0.15) 0deg, rgba(245, 158, 11, 0) 90deg, transparent 100%);
-        border-radius: 50%;
-        animation: sweep 4s linear infinite;
-      }
-      @keyframes sweep { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        /* LIVE ANIMATED CYBER GRID BACKGROUND */
+        .cyber-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: -1;
+            background-image: 
+                linear-gradient(rgba(255,170,0,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,170,0,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridScroll 25s linear infinite;
+        }
+        @keyframes gridScroll {
+            0% { background-position: 0 0; }
+            100% { background-position: 50px 50px; }
+        }
 
-      /* SCANLINE HUD EFFECT */
-      .scanline {
-        position: fixed; top: 0; left: 0; width: 100%; height: 4px;
-        background: rgba(245, 158, 11, 0.03);
-        z-index: 100; pointer-events: none;
-        animation: scan 6s linear infinite;
-      }
-      @keyframes scan { 0% { top: -5px; } 100% { top: 100%; } }
-
-      .animate-fade-in { animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-      @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+        /* LIGHT GOLD GLOW AT OUTLINE PARA SA LAHAT NG TECH BUTTONS/BADGES */
+        .tech-glow-badge {
+            color: #ffe680 !important; /* Light Gold/Yellow Text */
+            border: 1px solid rgba(255, 204, 0, 0.6) !important; /* Gold Outline */
+            text-shadow: 0 0 4px rgba(255, 230, 128, 0.5) !important; /* Text Glow */
+            box-shadow: 0 0 6px rgba(255, 204, 0, 0.2) !important; /* Box Outline Glow */
+            background: rgba(255, 204, 0, 0.03) !important;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .tech-glow-badge:hover {
+            box-shadow: 0 0 12px rgba(255, 204, 0, 0.5) !important;
+            background: rgba(255, 204, 0, 0.08) !important;
+        }
     </style>
-  </head>
-  <body class="min-h-screen flex flex-col relative">
-    <!-- Live UI Overlays -->
+</head>
+<body class="relative min-h-screen selection:bg-amber-500/30 selection:text-amber-200">
+
     <div class="cyber-bg"></div>
-    <div class="scanline"></div>
 
-    <!-- Top Status Bar (Live Metrics) -->
-    <div class="w-full bg-stone-950/90 border-b border-amber-500/10 px-4 py-1.5 flex justify-between items-center text-[10px] font-mono text-stone-400 z-50">
-      <div class="flex items-center gap-4">
-        <span><span class="text-amber-500">HOST:</span> JPC_NODE_01</span>
-        <span class="hidden sm:inline"><span class="text-amber-500">PING:</span> <span id="pingCounter">24</span>ms</span>
-      </div>
-      <div class="flex items-center gap-4">
-        <span><span class="text-amber-500">CORE_TEMP:</span> 41.2°C</span>
-        <span><span class="text-amber-500">SYS_LOAD:</span> <span id="loadCounter">12.4%</span></span>
-      </div>
-    </div>
-    <div class="w-full h-[2px] bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-700 shadow-[0_2px_15px_rgba(245,158,11,0.4)]"></div>
-
-    <!-- Header Section -->
-    <header class="relative w-full overflow-hidden bg-gradient-to-b from-amber-950/10 to-transparent py-24">
-      <canvas id="heroParticles" class="absolute inset-0 pointer-events-none opacity-50"></canvas>
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[200px] bg-amber-500/5 blur-[130px] rounded-full pointer-events-none"></div>
-      
-      <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 gap-12 md:gap-0">
-        <div class="flex-1">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/20 bg-amber-950/30 text-amber-400 text-xs font-mono mb-5 tracking-wider uppercase shadow-[0_0_15px_rgba(245,158,11,0.1)]">
-            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse shadow-[0_0_8px_#f59e11]"></span> CORE_ENGINE // STREAM_STABLE
-          </div>
-          <h1 class="tech-title text-4xl sm:text-5xl font-black leading-tight text-white">
-            Your All-in-One<br />
-            <span class="bg-gradient-to-r from-yellow-500 via-amber-400 to-amber-600 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(251,191,36,0.2)]">Operations & Admin Partner</span>
-          </h1>
-          <p class="mt-5 text-base text-slate-300 max-w-xl leading-relaxed">
-            2+ years of proven expertise in Office Administration, <b class="font-bold text-amber-400">Virtual Assistance</b>, Data Entry, HR/Payroll, and Sales Operations. Ready to deploy <span class="bg-amber-950/50 border border-amber-500/30 text-amber-300 rounded px-1.5 py-0.5 font-mono text-xs">full-stack execution</span>.
-          </p>
-          <div class="mt-8 flex flex-wrap gap-4 font-mono text-sm">
-            <a href="#contact" class="px-6 py-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-lg shadow-amber-500/20 border border-amber-400/50 transition-all transform hover:-translate-y-0.5 hover:shadow-amber-500/40">Execute_Contact.sh</a>
-            <a href="#services" class="px-6 py-3 rounded-lg border border-amber-500/20 text-amber-400 bg-amber-950/10 hover:bg-amber-500/10 font-semibold transition-all">Query_Services.log</a>
-          </div>
-        </div>
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-5xl mx-auto px-4 pt-16 pb-24 relative z-10">
         
-        <!-- Live Animated 3D Radar Block -->
-        <div class="flex-shrink-0 relative">
-          <div class="relative w-64 h-64 flex items-center justify-center bg-stone-950/90 rounded-full border border-amber-500/20 shadow-[0_0_50px_rgba(245,158,11,0.08)] group">
-            <div class="radar-sweep"></div>
-            <div class="absolute inset-0 rounded-full border border-dashed border-amber-500/10 animate-[spin_80s_linear_infinite]"></div>
-            <div class="absolute inset-4 rounded-full border border-amber-600/5 animate-[spin_30s_linear_infinite_reverse]"></div>
-            <div class="absolute inset-12 rounded-full border border-amber-500/5"></div>
-            <div class="absolute inset-24 rounded-full border border-amber-500/5"></div>
+        <!-- HERO SECTION -->
+        <section class="flex flex-col md:flex-row items-center justify-between gap-12 mb-20">
+            <div class="flex-1 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-xs font-mono text-amber-400">
+                    <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                    CORE_ENGINE // STREAM_STABLE
+                </div>
+                <h1 class="text-4xl md:text-5xl font-black tracking-tight text-white leading-tight">
+                    Your All-in-One <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">Operations & Admin Partner</span>
+                </h1>
+                <p class="text-slate-400 max-w-xl leading-relaxed text-base md:text-lg">
+                    2+ years of proven expertise in Office Administration, 
+                    <span class="text-amber-300 font-semibold">Virtual Assistance</span>, Data Entry, HR/Payroll, and Sales Operations. Ready to deploy 
+                    <span class="tech-glow-badge">full-stack execution</span>.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-black font-mono font-bold rounded-lg shadow-lg shadow-amber-500/20 transition transform hover:-translate-y-0.5">
+                        Execute_Contact.sh
+                    </a>
+                    <a href="#capabilities" class="px-6 py-3 border border-amber-500/30 hover:border-amber-500/60 bg-amber-500/5 hover:bg-amber-500/10 text-amber-400 font-mono text-sm rounded-lg transition">
+                        Query_Services.log
+                    </a>
+                </div>
+            </div>
             
-           <img src="https://i.ibb.co/hxWpvBFR/1000012362.jpg" alt="John Paul Cornelio" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover z-10 border-2 border-amber-500/30 shadow-[0_0_25px_rgba(245,158,11,0.25)] group-hover:border-amber-400 group-hover:shadow-[0_0_35px_rgba(245,158,11,0.5)] transition-all duration-500" />
-            <span class="absolute bottom-2 right-4 bg-amber-950/90 border border-amber-500/40 text-amber-400 text-[9px] font-mono px-2.5 py-0.5 rounded-full font-bold shadow-[0_0_10px_rgba(245,158,11,0.2)] tracking-widest animate-pulse">SYS_LIVE</span>
-          </div>
-        </div>
-      </div>
-    </header>
+            <!-- PROFILE IMAGE -->
+            <div class="relative group">
+                <div class="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full blur-2xl opacity-20 group-hover:opacity-30 transition duration-500"></div>
+                <div class="relative w-64 h-64 rounded-full border-2 border-amber-500/30 p-2 bg-black/40 backdrop-blur-sm">
+                    <div class="w-full h-full rounded-full overflow-hidden border border-amber-400/40 relative">
+                        <img src="https://images.squarespace-cdn.com/content/v1/60f7e44a47d2c317f22384a5/1653308892440-JTT6K2OMK8Z6O7EDG9NG/Paul.jpg" alt="John Paul Cornelio" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500" />
+                        <div class="absolute bottom-2 right-4 bg-black/80 border border-amber-500/40 px-2 py-0.5 rounded text-[10px] font-mono text-amber-400">SYS_LIVE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Capabilities Terminal Section -->
-    <section id="services" class="max-w-5xl w-full mx-auto mt-16 px-4">
-      <h2 class="tech-title text-xl text-amber-400 tracking-wider font-bold mb-6 flex items-center gap-2 uppercase">
-        <i class="fa-solid fa-terminal text-xs text-amber-500 animate-pulse"></i> [01] Core_Capabilities
-      </h2>
-      <div class="glass-card rounded-xl p-8">
-        <div id="serviceTabs" class="flex flex-col lg:flex-row gap-2 mb-8 font-mono text-xs" role="tablist">
-          <button class="tab-btn active-tab px-4 py-3 rounded-lg font-bold flex-1 border text-left transition-all" role="tab" aria-selected="true">> Virtual Assistance</button>
-          <button class="tab-btn px-4 py-3 rounded-lg font-medium flex-1 border border-stone-900 text-stone-400 text-left hover:border-amber-500/30 transition-all" role="tab" aria-selected="false">> Admin Support</button>
-          <button class="tab-btn px-4 py-3 rounded-lg font-medium flex-1 border border-stone-900 text-stone-400 text-left hover:border-amber-500/30 transition-all" role="tab" aria-selected="false">> Data Systems</button>
-          <button class="tab-btn px-4 py-3 rounded-lg font-medium flex-1 border border-stone-900 text-stone-400 text-left hover:border-amber-500/30 transition-all" role="tab" aria-selected="false">> HR & Payroll</button>
-          <button class="tab-btn px-4 py-3 rounded-lg font-medium flex-1 border border-stone-900 text-stone-400 text-left hover:border-amber-500/30 transition-all" role="tab" aria-selected="false">> Sales & Ops</button>
-        </div>
-        <div id="servicePanels" class="mt-3 min-h-[170px]">
-          <div class="service-panel animate-fade-in">
-            <h3 class="text-base text-amber-300 font-bold mb-4 font-mono">// Virtual Assistance & Email/Calendar Management</h3>
-            <ul class="space-y-3 text-slate-300 text-sm">
-              <li class="flex items-start gap-2.5"><i class="fa-solid fa-angle-right text-amber-400 mt-1 text-xs animate-ping [animation-duration:1.5s]"></i><span>Efficiently handle inbox triage, respond to queries, and keep your priorities up front.</span></li>
-              <li class="flex items-start gap-2.5"><i class="fa-solid fa-angle-right text-amber-400 mt-1 text-xs"></i><span>Professional scheduling & reminders, calendar optimization.</span></li>
-              <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-amber-500 mt-1 text-xs"></i><span>Meeting minutes, travel booking, and remote operational support tasks.</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- [01] CORE CAPABILITIES -->
+        <section id="capabilities" class="mb-24 space-y-8">
+            <h2 class="text-xl font-mono text-amber-500 tracking-wider flex items-center gap-2">
+                <span>[01]</span> CORE_CAPABILITIES
+            </h2>
+            
+            <div class="bg-amber-500/5 border border-amber-500/10 rounded-xl p-6 backdrop-blur-md space-y-6">
+                <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-4">
+                    <span class="tech-glow-badge">Virtual Assistance</span>
+                    <span class="tech-glow-badge">Admin Support</span>
+                    <span class="tech-glow-badge">Data Systems</span>
+                    <span class="tech-glow-badge">HR & Payroll</span>
+                    <span class="tech-glow-badge">Sales & Ops</span>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="text-lg font-bold text-amber-400 font-mono">// Virtual Assistance & Email/Calendar Management</h3>
+                    <ul class="space-y-3 text-slate-400 text-sm list-inside list-disc pl-2">
+                        <li>Efficiently handle inbox triage, respond to queries, and keep your priorities up front.</li>
+                        <li>Professional scheduling & reminders, calendar optimization.</li>
+                        <li>Meeting minutes, travel booking, and remote operational support tasks.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- Subsystems Grid -->
-    <section id="tech-stack" class="max-w-5xl w-full mx-auto mt-20 px-4">
-      <h2 class="tech-title text-xl text-amber-400 tracking-wider font-bold mb-6 flex items-center gap-2 uppercase">
-        <i class="fa-solid fa-cpu text-xs text-amber-500"></i> [02] Technology_Subsystems
-      </h2>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="glass-card p-5 rounded-xl">
-          <h3 class="font-bold mb-4 text-amber-400 font-mono text-xs uppercase tracking-widest border-b border-amber-500/10 pb-2">// Productivity</h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-2"><i class="fab fa-google text-amber-400"></i>Google Workspace</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-2"><i class="fas fa-file-excel text-amber-500"></i>MS Office</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">Advanced Excel</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">Google Sheets</span>
-          </div>
-        </div>
-        <div class="glass-card p-5 rounded-xl">
-          <h3 class="font-bold mb-4 text-amber-400 font-mono text-xs uppercase tracking-widest border-b border-amber-500/10 pb-2">// Communication</h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-2"><i class="fas fa-video text-amber-400"></i>Zoom</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">Meet</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">Calendly</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium"><i class="fab fa-whatsapp text-amber-500"></i>WhatsApp</span>
-          </div>
-        </div>
-        <div class="glass-card p-5 rounded-xl">
-          <h3 class="font-bold mb-4 text-amber-400 font-mono text-xs uppercase tracking-widest border-b border-amber-500/10 pb-2">// CRM & Sales</h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">CRM Management</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">Lead Tracking</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium text-amber-400">Tindahan Club Ph</span>
-          </div>
-        </div>
-        <div class="glass-card p-5 rounded-xl border-amber-500/30">
-          <h3 class="font-bold mb-4 text-amber-300 font-mono text-xs uppercase tracking-widest border-b border-amber-500/20 pb-2">// AI Co-Pilots</h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-2"><i class="fa-brands fa-rocketchat text-amber-400"></i>ChatGPT</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">Gemini</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">Claude</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-bold border border-amber-500/40 text-amber-400 bg-amber-950/30">flowith.io</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-bold border border-yellow-500/40 text-yellow-400 bg-stone-900/40">manus.im</span>
-          </div>
-        </div>
-        <div class="glass-card p-5 rounded-xl">
-          <h3 class="font-bold mb-4 text-amber-400 font-mono text-xs uppercase tracking-widest border-b border-amber-500/10 pb-2">// Design / Content</h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-2"><i class="fas fa-palette text-amber-400"></i>Canva</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">CapCut</span>
-            <span class="interactive-badge px-3 py-1.5 rounded-lg text-xs font-medium">Carrd</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- [02] TECHNOLOGY SUBSYSTEMS -->
+        <section class="mb-24 space-y-8">
+            <h2 class="text-xl font-mono text-amber-500 tracking-wider">
+                <span>[02]</span> TECHNOLOGY_SUBSYSTEMS
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- PRODUCTIVITY -->
+                <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl p-5 space-y-4">
+                    <h3 class="text-xs font-mono text-slate-500 uppercase tracking-widest">// Productivity</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-glow-badge">Google Workspace</span>
+                        <span class="tech-glow-badge">MS Office</span>
+                        <span class="tech-glow-badge">Advanced Excel</span>
+                        <span class="tech-glow-badge">Google Sheets</span>
+                    </div>
+                </div>
 
-    <!-- Operational Specs -->
-    <section id="why-hire" class="max-w-5xl w-full mx-auto mt-20 px-4">
-      <div class="glass-card p-8 rounded-xl flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
-        <div class="flex-1">
-          <h2 class="tech-title text-xl text-amber-400 font-bold mb-3 uppercase">// Operational_Reliability</h2>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            <span class="text-amber-400 font-bold font-mono">Hardware & Grid Redundancy:</span> Multi-device setup deployed to guarantee network uptime. Syncing cleanly with international standard business hours.
-          </p>
-        </div>
-        <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3 font-mono text-xs">
-          <div class="bg-stone-950/80 border border-stone-900 rounded-lg p-4 flex flex-col gap-2">
-            <div class="flex items-center gap-2 text-slate-300"><i class="fas fa-desktop text-amber-500 w-5"></i><span>Desktop Win 10 Pro</span></div>
-            <div class="flex items-center gap-2 text-slate-300"><i class="fas fa-laptop text-amber-500 w-5"></i><span>Acer Aspire Laptop</span></div>
-          </div>
-          <div class="bg-stone-950/80 border border-stone-900 rounded-lg p-4 flex flex-col gap-2">
-            <div class="flex items-center gap-2 text-slate-300"><i class="fas fa-wifi text-amber-500 w-5"></i><span>Fiber + 4G/5G Backup</span></div>
-            <div class="flex items-center gap-2 text-slate-300"><i class="fa-solid fa-bolt text-amber-400 w-5"></i><span>6hr UPS Power Grid</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
+                <!-- COMMUNICATION -->
+                <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl p-5 space-y-4">
+                    <h3 class="text-xs font-mono text-slate-500 uppercase tracking-widest">// Communication</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-glow-badge">Zoom</span>
+                        <span class="tech-glow-badge">Meet</span>
+                        <span class="tech-glow-badge">Calendly</span>
+                        <span class="tech-glow-badge">WhatsApp</span>
+                    </div>
+                </div>
 
-    <!-- Deployment History Section (FIXED & COMPLETE) -->
-    <section id="timeline" class="max-w-5xl w-full mx-auto mt-24 px-4">
-      <h2 class="tech-title text-xl text-amber-400 tracking-wider font-bold mb-6 flex items-center gap-2 uppercase">
-        <i class="fa-solid fa-folder-open text-xs text-amber-500"></i> [03] Deployment_History
-      </h2>
-      <div class="relative pl-8 border-l-2 border-dashed border-amber-500/10 py-4 ml-2">
-        
-        <!-- Job 1 -->
-        <div class="relative mb-12 pl-8 group">
-          <div class="absolute -left-[41px] top-1.5 rounded-full w-5 h-5 timeline-dot border-4 border-stone-950 z-10"></div>
-          <div class="glass-card p-5 rounded-lg">
-            <div class="text-base text-amber-400 font-bold font-mono">Branch Sales & Operations Admin</div>
-            <div class="text-slate-300 font-semibold text-xs mt-0.5">Tempwell Company | <span class="text-stone-500 font-mono font-normal">June 2025 – May 2026</span></div>
-            <div class="mt-3 text-slate-300 text-sm leading-relaxed">Managed branch operational records, daily sales performance reporting, and multi-team field coordination.</div>
-          </div>
-        </div>
-        
-        <!-- Job 2 -->
-        <div class="relative mb-12 pl-8 group">
-          <div class="absolute -left-[41px] top-1.5 rounded-full w-5 h-5 timeline-dot border-4 border-stone-950 z-10"></div>
-          <div class="glass-card p-5 rounded-lg">
-            <div class="text-base text-amber-400 font-bold font-mono">Sales Feeder / Sales Executive</div>
-            <div class="text-slate-300 font-semibold text-xs mt-0.5">Sonic Sales Distribution - Unilever Products | <span class="text-stone-500 font-mono font-normal">Sep 2023 – June 2025</span></div>
-            <div class="mt-3 text-slate-300 text-sm leading-relaxed">B2B commercial accounts lead tracking, target data logging, CRM system hygiene, and quotation staging.</div>
-          </div>
-        </div>
+                <!-- CRM & SALES -->
+                <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl p-5 space-y-4">
+                    <h3 class="text-xs font-mono text-slate-500 uppercase tracking-widest">// CRM & Sales</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-glow-badge">CRM Management</span>
+                        <span class="tech-glow-badge">Lead Tracking</span>
+                        <span class="tech-glow-badge">Tindahan Club Ph</span>
+                    </div>
+                </div>
 
-        <!-- Job 3 (RESTORATION COMPLETE) -->
-        <div class="relative mb-4 pl-8 group">
-          <div class="absolute -left-[41px] top-1.5 rounded-full w-5 h-5 timeline-dot border-4 border-stone-950 z-10"></div>
-          <div class="glass-card p-5 rounded-lg">
-            <div class="text-base text-amber-400 font-bold font-mono">Admin Assistant / Payroll Support</div>
-            <div class="text-slate-300 font-semibold text-xs mt-0.5">Kingstrooper Security Agency | <span class="text-stone-500 font-mono font-normal">Apr 2023 – July 2023</span></div>
-            <div class="mt-3 text-slate-300 text-sm leading-relaxed">Delivered mission-critical assistance in officer payroll processing, system attendance verification, and high-volume physical documentation.</div>
-          </div>
-        </div>
+                <!-- AI CO-PILOTS -->
+                <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl p-5 space-y-4">
+                    <h3 class="text-xs font-mono text-slate-500 uppercase tracking-widest">// AI Co-Pilots</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-glow-badge">ChatGPT</span>
+                        <span class="tech-glow-badge">Gemini</span>
+                        <span class="tech-glow-badge">Claude</span>
+                        <span class="tech-glow-badge">flowith.io</span>
+                        <span class="tech-glow-badge">manus.im</span>
+                    </div>
+                </div>
 
-      </div>
-    </section>
+                <!-- DESIGN / CONTENT -->
+                <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl p-5 space-y-4">
+                    <h3 class="text-xs font-mono text-slate-500 uppercase tracking-widest">// Design / Content</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-glow-badge">Canva</span>
+                        <span class="tech-glow-badge">CapCut</span>
+                        <span class="tech-glow-badge">Carrd</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer & Contact Form -->
-    <footer class="bg-stone-950/40 border-t border-amber-500/10 mt-28 py-14 px-6 relative z-10">
-      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-        <div>
-          <h3 class="tech-title text-base text-amber-400 font-bold mb-4 uppercase font-mono">// Open_Communications_Channel</h3>
-          <form id="contact" action="#" class="space-y-4 font-mono text-xs" autocomplete="off">
-            <input required name="name" placeholder="[Identity] Your Name" type="text" class="w-full px-4 py-3 rounded border border-amber-500/20 bg-stone-900/30 focus:border-amber-500 focus:outline-none text-slate-100 text-sm shadow-inner" />
-            <input required name="email" placeholder="[Network_Address] Your Email" type="email" class="w-full px-4 py-3 rounded border border-amber-500/20 bg-stone-900/30 focus:border-amber-500 focus:outline-none text-slate-100 text-sm shadow-inner" />
-            <textarea required name="message" placeholder="[Payload] Your Message" class="w-full px-4 py-3 rounded border border-amber-500/20 bg-stone-900/30 focus:border-amber-500 focus:outline-none text-slate-100 text-sm shadow-inner" rows="4"></textarea>
-            <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded shadow-lg shadow-amber-500/20 border border-amber-400/30 transition-all">TRANSMIT_DATA.sh</button>
-            <div id="formResponse" class="text-amber-400 font-semibold pt-2 hidden"></div>
-          </form>
-        </div>
-        
-        <div class="flex flex-col justify-between gap-6">
-          <div>
-            <h3 class="tech-title text-base text-amber-400 font-bold mb-4 uppercase font-mono">// Core_Endpoints</h3>
-            <ul class="text-slate-300 space-y-3.5 text-sm">
-              <li class="flex items-center gap-3"><i class="fas fa-user text-amber-500 w-4"></i><span>John Paul Cornelio</span></li>
-              <li class="flex items-center gap-3"><i class="fas fa-envelope text-amber-500 w-4"></i><a href="mailto:paulestrera40@gmail.com" class="hover:text-amber-400 underline">paulestrera40@gmail.com</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-5xl mx-auto border-t border-stone-900 mt-12 pt-6 text-stone-600 text-center font-mono text-[10px]">
-        © 2026 JOHN_PAUL_CORNELIO. CORE_BUILD_v3.1.0 // HUD_RADAR_TIMELINE_FIXED.
-      </div>
-    </footer>
+        <!-- [03] CONTACT FORM (LIVE VIA FORMSUBMIT) -->
+        <section id="contact" class="mb-16 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h2 class="text-xl font-mono text-amber-500 tracking-wider">
+                        <span>[03]</span> OPEN_COMMUNICATIONS_CHANNEL
+                    </h2>
+                    <!-- FORM TAG CONFIGURED TO FORMSUBMIT -->
+                    <form action="https://formsubmit.co/paulestrera40@gmail.com" method="POST" class="space-y-4">
+                        <!-- Automatic redirection configuration after submission -->
+                        <input type="hidden" name="_next" value="https://paulestrera40-ux.github.io/Portfolio/">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div>
+                            <input type="text" name="name" placeholder="[Identity] Your Name" required
+                                class="w-full bg-slate-950/60 border border-slate-800 rounded-lg px-4 py-3 font-mono text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-amber-500/60 transition" />
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="[Network_Address] Your Email" required
+                                class="w-full bg-slate-950/60 border border-slate-800 rounded-lg px-4 py-3 font-mono text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-amber-500/60 transition" />
+                        </div>
+                        <div>
+                            <textarea name="message" rows="5" placeholder="[Payload] Your Message" required
+                                class="w-full bg-slate-950/60 border border-slate-800 rounded-lg px-4 py-3 font-mono text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-amber-500/60 transition resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-amber-500 hover:bg-amber-600 text-black font-mono font-bold rounded-lg transition shadow-md hover:shadow-lg">
+                            TRANSMIT_DATA.sh
+                        </button>
+                    </form>
+                </div>
 
-    <script>
-    /* Background Canvas Particles */
-    const canvas = document.getElementById('heroParticles');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-    function resizeCanvas() { canvas.width = canvas.parentElement.offsetWidth; canvas.height = canvas.parentElement.offsetHeight; }
-    window.addEventListener('resize', resizeCanvas); resizeCanvas();
-    
-    class Particle {
-      constructor() { this.x = Math.random() * canvas.width; this.y = Math.random() * canvas.height; this.size = Math.random() * 1.5 + 0.4; this.speedY = Math.random() * -0.15 - 0.05; this.alpha = Math.random() * 0.4 + 0.1; }
-      update() { this.y += this.speedY; if (this.y < 0) { this.y = canvas.height; this.x = Math.random() * canvas.width; } }
-      draw() { ctx.fillStyle = `rgba(245, 158, 11, ${this.alpha})`; ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); }
-    }
-    for (let i = 0; i < 35; i++) particles.push(new Particle());
-    function animate() { ctx.clearRect(0, 0, canvas.width, canvas.height); particles.forEach(p => { p.update(); p.draw(); }); requestAnimationFrame(animate); }
-    animate();
+                <div class="space-y-6 md:pt-12">
+                    <h3 class="text-xs font-mono text-slate-500 uppercase tracking-widest">// Core_Endpoints</h3>
+                    <div class="space-y-2 font-mono text-sm">
+                        <p class="text-white font-bold text-base">John Paul Cornelio</p>
+                        <p class="text-amber-400"><a href="mailto:paulestrera40@gmail.com" class="hover:underline">paulestrera40@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    /* Live Top HUD Data Simulator */
-    setInterval(() => {
-      document.getElementById('pingCounter').textContent = Math.floor(Math.random() * (32 - 18) + 18);
-      document.getElementById('loadCounter').textContent = (Math.random() * (16.8 - 9.1) + 9.1).toFixed(1) + "%";
-    }, 2500);
+        <!-- FOOTER -->
+        <footer class="border-t border-slate-900 pt-8 text-center text-[10px] font-mono text-slate-600 tracking-wider">
+            © 2026 JOHN_PAUL_CORNELIO. CORE_BUILD_v3.1.0 // HUD_RADAR_TIMELINE_FIXED.
+        </footer>
 
-    /* Terminal Tab Controls */
-    const servicePanels = [
-      `<div class="service-panel animate-fade-in"><h3 class="text-base text-amber-300 font-bold mb-4 font-mono">// Virtual Assistance & Email/Calendar Management</h3><ul class="space-y-3 text-slate-300 text-sm"><li class="flex items-start gap-2.5"><i class="fa-solid fa-angle-right text-amber-400 mt-1 text-xs"></i><span>Efficiently handle inbox triage, respond to queries, and keep your priorities up front.</span></li><li class="flex items-start gap-2.5"><i class="fa-solid fa-angle-right text-amber-400 mt-1 text-xs"></i><span>Professional scheduling & reminders, calendar optimization.</span></li></ul></div>`,
-      `<div class="service-panel animate-fade-in"><h3 class="text-base text-amber-300 font-bold mb-4 font-mono">// Administrative Support</h3><ul class="space-y-3 text-slate-300 text-sm"><li class="flex items-start gap-2.5"><i class="fa-solid fa-angle-right text-amber-400 mt-1 text-xs"></i><span>Efficient file-system management, precise electronic records indexing.</span></li></ul></div>`,
-      `<div class="service-panel animate-fade-in"><h3 class="text-base text-amber-300 font-bold mb-4 font-mono">// Data Systems</h3><ul class="space-y-3 text-slate-300 text-sm"><li class="flex items-start gap-2.5"><i class="fa-solid fa-angle-right text-amber-400 mt-1 text-xs"></i><span>Advanced Excel & Google Sheets structural operations: array formulas and data scrubbing.</span></li></ul></div>`,
-      `<div class="service-panel animate-fade-in"><h3 class="text-base text-amber-300 font-bold mb-4 font-mono">// HR & Payroll Support</h3><ul class="space-y-3 text-slate-300 text-sm"><li class="flex items-start gap-2.5"><i class="fa-solid fa-angle-right text-amber-400 mt-1 text-xs"></i><span>Maintained precise roster data logs and evaluated configurations.</span></li></ul></div>`,
-      `<div class="service-panel animate-fade-in"><h3 class="text-base text-amber-300 font-bold mb-4 font-mono">// Sales & Operations Support</h3><ul class="space-y-3 text-slate-300 text-sm"><li class="flex items-start gap-2.5"><i class="fa-solid fa-angle-right text-amber-400 mt-1 text-xs"></i><span>B2B customer lead extraction and rigorous CRM structural health cleanups.</span></li></ul></div>`
-    ];
-    const tabButtons = document.querySelectorAll(".tab-btn");
-    const tabPanels = document.getElementById("servicePanels");
-    tabButtons.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        tabButtons.forEach(b => { b.classList.remove("active-tab"); b.classList.add("border-stone-900", "text-stone-400"); });
-        btn.classList.add("active-tab"); btn.classList.remove("border-stone-900", "text-stone-400");
-        tabPanels.innerHTML = servicePanels[i];
-      });
-    });
-
-    document.getElementById("contact").onsubmit = function(e){ e.preventDefault(); const resp = document.getElementById("formResponse"); resp.classList.remove("hidden"); resp.textContent = "⚡ SYSTEM_ALERT: Broadcast successful. Data packet routed."; this.reset(); setTimeout(() => { resp.classList.add("hidden"); }, 4500); };
-    </script>
-  </body>
+    </main>
+</body>
 </html>
